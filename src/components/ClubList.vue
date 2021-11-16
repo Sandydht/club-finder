@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="grid grid-flow-row w-full gap-5">
     <club-item
       v-for="(club, index) in clubs"
       :key="index"
