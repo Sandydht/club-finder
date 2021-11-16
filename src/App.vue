@@ -1,9 +1,15 @@
 <template>
-  <div>
+  <div class="w-full max-w-1440 mx-auto font-sans">
     <app-bar></app-bar>
-    <search-bar @handle-submit="submit"></search-bar>
-    <club-list :clubs="data.clubs" v-show="!data.error"></club-list>
-    <alert-message :message="data.message" v-show="data.error"></alert-message>
+
+    <div class="sticky top-0 max-w-screen-md mx-auto mt-2">
+      <search-bar @handle-submit="submit"></search-bar>
+    </div>
+
+    <div class="max-w-screen-md mx-auto p-5">
+      <club-list :clubs="data.clubs" v-show="!data.error"></club-list>
+      <alert-message :message="data.message" v-show="data.error"></alert-message>
+    </div>
   </div>
 </template>
 
