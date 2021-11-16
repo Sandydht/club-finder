@@ -1,12 +1,12 @@
 <template>
-  <div>
-    <div>
-      <img :src="fanArt" :alt="name + ' image'">
+  <div class="w-full rounded-md bg-white overflow-hidden shadow-md">
+    <div class="overflow-hidden">
+      <img :src="fanArt" :alt="name + ' image'" class="w-full h-full object-cover object-center">
     </div>
-    <div>
-      <p data-test="club-name">{{ name }}</p>
-      <p data-test="club-stadium">{{ stadium }}</p>
-      <p data-test="club-description">{{ description }}</p>
+    <div class="p-5">
+      <p data-test="club-name" class="font-bold text-xl">{{ name }}</p>
+      <p data-test="club-stadium" class="mt-2 text-lg">{{ stadium }}</p>
+      <p data-test="club-description" class="mt-2 text-md text-justify">{{ description }}</p>
     </div>
   </div>
 </template>
