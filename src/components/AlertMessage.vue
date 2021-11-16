@@ -1,5 +1,5 @@
 <template>
-  <p>{{ message }}</p>
+  <p class="text-xl font-bold">{{ message }}</p>
 </template>
 
 <script>
